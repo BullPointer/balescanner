@@ -9,7 +9,7 @@ def connectAllScan(tgthost, tgtports):
 	try:
 		sock.connect((tgthost, tgtports))
 		print(colored("{}/tcp   open".format(tgtports), "blue"))
-	except Error:
+	except:
 		pass
 	finally:
 		sock.close()

@@ -8,7 +8,7 @@ def connectChosenScan(tgthost, tgtport):
 	try:
 		sock.connect((tgthost, tgtport))
 		print(colored("{}/tcp   open".format(tgtport), "blue"))
-	except Error:
+	except:
 		print(colored("{}/tcp   close".format(tgtport), "red"))
 	finally:
 		sock.close()
